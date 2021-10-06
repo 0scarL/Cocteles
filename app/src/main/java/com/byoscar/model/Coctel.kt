@@ -1,24 +1,26 @@
+package com.byoscar.model
+
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-data class Drink(
+data class Coctel(
     val dateModified: String,
     val idDrink: String,
     val strAlcoholic: String,
     val strCategory: String,
     val strCreativeCommonsConfirmed: String,
     val strDrink: String,
-    val strDrinkAlternate: Any,
+    val strDrinkAlternate: String,
     val strDrinkDE: String,
     val strDrinkES: String,
     val strDrinkFR: String,
     val strDrinkThumb: String,
-    @SerializedName("strDrinkZH-HANS")
-    val strDrinkZHANS: String,
-    @SerializedName("strDrinkZH-HANT")
-    val strDrinkZHANT: String,
+//    @SerializedName("strDrinkZH-HANS")
+//    val strDrinkZHANS: String,
+//    @SerializedName("strDrinkZH-HANT")
+//    val strDrinkZHANT: String,
     val strGlass: String,
     val strIBA: String,
     val strImageAttribution: String,
@@ -42,10 +44,10 @@ data class Drink(
     val strInstructionsDE: String,
     val strInstructionsES: String,
     val strInstructionsFR: String,
-    @SerializedName("strInstructionsZH-HANS")
-    val strInstructionsZHANS: String,
-    @SerializedName("strInstructionsZH-HANT")
-    val strInstructionsZHANT: String,
+//    @SerializedName("strInstructionsZH-HANS")
+//    val strInstructionsZHANS: String,
+//    @SerializedName("strInstructionsZH-HANT")
+//    val strInstructionsZHANT: String,
     val strMeasure1: String,
     val strMeasure10: String,
     val strMeasure11: String,
